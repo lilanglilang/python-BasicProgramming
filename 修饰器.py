@@ -73,7 +73,7 @@ def log(text):
     '''一个装饰器函数'''
     def derector(func):
         @functools.wraps(func)#wrapper.__name__ = func.__name__
-        #wrapper在实现前加入 @functools.wraps(func) 可以保证装饰器不会对被装饰函数造成影响 目前还不是很明白
+        #wrapper在实现前加入 @functools.wraps(func) 可以保证装饰器不会对被装饰函数造成影响 目前还不是很明白,目前理解是认为确保两个函数相等
         def wrapper(*args,**kws):
             print("%s %s():"%(text,func.__name__))
             print(*args)
@@ -90,3 +90,18 @@ excute now():
 2017-11-15
 '''
 print(now.__name__)
+print("#################################################")
+def timeown(func):
+    @functools.wraps(func)
+    def wrapped(*args,**kw):
+        starttime=time.time()
+        print(starttime*1000)
+        endtime=time.time()
+        func(*args,**kw)
+        print((starttime-endtime)*1000)
+        return  func
+    return wrapped
+@timeown
+def test(a,b):
+    print("a+b=",a+b)
+print(test(1,2))
