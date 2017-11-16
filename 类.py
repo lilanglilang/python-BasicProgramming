@@ -13,9 +13,12 @@ class Student(object):
         self.name=name
         self.code=code
     def other_function(self,name,code):
+        #就是第一个参数永远是实例变量self
         self.hehe="baidu"#任何地方植入变量
         print(name,code)
         return "谢谢使用"
 var=Student('lilang','89')
 print(var.other_function(var.name,var.code))
 print(var.hehe)
+#访问限制
+print(dir(Student))
