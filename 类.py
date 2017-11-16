@@ -14,7 +14,9 @@ class Student(object):
         self.code=code
 
     def other_function(self,name,code):
+        self.hehe="baidu"#任何地方植入变量
         print(name,code)
         return "谢谢使用"
 var=Student('lilang','89')
 print(var.other_function(var.name,var.code))
+print(var.hehe)
