@@ -12,6 +12,7 @@ class Student(object):
     def __init__(self,name,code):
         self.name=name
         self.code=code
+
     def other_function(self,name,code):
         print(name,code)
         return "谢谢使用"
