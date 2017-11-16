@@ -12,7 +12,6 @@ class Student(object):
     def __init__(self,name,code):
         self.name=name
         self.code=code
-
     def other_function(self,name,code):
         self.hehe="baidu"#任何地方植入变量
         print(name,code)
