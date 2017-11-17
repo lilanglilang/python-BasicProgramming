@@ -27,6 +27,6 @@ class Myproperty(object):
             print("您输入的数据有误！")
         self.google=value
 demo=Myproperty()
-demo.score=10
+demo.score=110
 name=demo.score
 print(name)
