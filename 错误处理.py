@@ -166,7 +166,7 @@ def foo(s):
         raise FooError("错误信息")
 def exception():
     try:
-        1/0
+        10/0
     except ValueError as e:
         print(e)
         raise
