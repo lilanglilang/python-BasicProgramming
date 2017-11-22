@@ -67,6 +67,6 @@ print(re.match(r'^(\d+?)(0*)$','121221212132312320000').groups())
 telepahone=re.compile(r'(\d{3})-(\d{3,8})$')
 print(telepahone.match('123-4567788').groups())
 #email
-email_match=re.compile(r'(\w+?)@(qq|gmail|163).(\w+)')
+email_match=re.compile(r'([a-zA-Z1-9]+?)@(qq|gmail|163).(\w+)')
 print(email_match.match("someon1212e@gmail.com").groups())
-print(email_match.match("soaSF_DF@163.com").groups())
+print(email_match.match("soaSFDF@163.com").groups())
