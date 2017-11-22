@@ -6,7 +6,6 @@ def process_student():
     stu=local_stu.student
     print("hello %s (in %s)"%(stu,threading.current_thread().name))
 def process_thread(name):
-
     local_stu.student=name
     process_student()
 t1=threading.Thread(target=process_thread,args=('bob',),name='thrad_bob')
