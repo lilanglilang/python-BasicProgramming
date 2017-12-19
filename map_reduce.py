@@ -19,3 +19,6 @@ def helo(s):
 def switch_case(s):
     return {1:"helo(s)"}[s]
 switch_case(1)
+
+data=(x for x in range(1,10))#生成迭代器对象
+print(data)
