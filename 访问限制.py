@@ -14,7 +14,7 @@ class Student(object):
 
     def set_name(self,name):
          self.__name=name;
-name=Student("hello")
+name=Student("huanren")
 name.set_name("lilang")
 print(name.get_name())
 

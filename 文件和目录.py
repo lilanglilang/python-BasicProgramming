@@ -19,7 +19,7 @@ print(os.path.split('/path/to/file.txt'))
 '''
 ('/path/to/file', '.txt')
 ('/path/to', 'file.txt')
-os.rename("hello.py",'hello.txt')
+os.rename("huanren.py",'huanren.txt')
 os.remove("")#删掉文件
 '''
 

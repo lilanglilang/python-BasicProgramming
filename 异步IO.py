@@ -6,19 +6,19 @@ asyncio的编程模型就是一个消息循环。
 然后把需要执行的协程扔到EventLoop中执行，就实现了异步IO。
 import  asyncio
 @asyncio.coroutine
-def hello():
-    print("hello world")
+def huanren():
+    print("huanren world")
     r=yield from asyncio.sleep(1)
-    print('hello again')
+    print('huanren again')
 loop=asyncio.get_event_loop()
-loop.run_until_complete(hello())
+loop.run_until_complete(huanren())
 loop.close()
 '''
 
 '''
 @asyncio.coroutine把一个generator标记为coroutine类型，
 然后，我们就把这个coroutine扔到EventLoop中执行。
-hello()会首先打印出Hello world!，然后，
+huanren()会首先打印出Hello world!，然后，
 yield from语法可以让我们方便地调用另一个generator。
 由于asyncio.sleep()也是一个coroutine，所以线程不会等待asyncio.sleep()，
 而是直接中断并执行下一个消息循环。当asyncio.sleep()返回时，
@@ -33,7 +33,7 @@ n=0
 import asyncio
 import threading
 @asyncio.coroutine
-def hello():
+def huanren():
     global n
     n=n+1
     print(n)
@@ -42,7 +42,7 @@ def hello():
     print('Hello again! (%s)' % threading.currentThread())
 task=[]
 for i in  range(1000):
-    task.append(hello())
+    task.append(huanren())
 loop=asyncio.get_event_loop()
 loop.run_until_complete(asyncio.wait(task))
 loop.close()

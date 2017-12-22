@@ -12,9 +12,9 @@ Pickle的问题和所有其他编程语言特有的序列化问题一样，就�
 import pickle
 # print(pickle.dumps(d))#方法把任意对象序列化成一个bytes
 #pickle.dump()直接把对象序列化后写入一个file-like Object：
-with open("hello.txt","ab") as files:
+with open("huanren.txt","ab") as files:
     pickle.dump(d,files)
-fl=open("hello.txt","rb")
+fl=open("huanren.txt","rb")
 d=pickle.load(fl)
 fl.close()
 print(d)
@@ -39,7 +39,7 @@ d=dict(name='ll',company='google')
 print(json.dumps(d))
 dumps()方法返回一个str，内容就是标准的JSON。
 类似的，dump()方法可以直接把JSON写入一个file-like Object。
-with open('hello.txt','w') as  jsonfile:
+with open('huanren.txt','w') as  jsonfile:
     json.dump(json.dumps(d),jsonfile)
 '''
 

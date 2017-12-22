@@ -14,7 +14,6 @@ print(t.num)
 class Demo2(object):
     def __init__(self):
         self.__money=''
-
     @property
     def Money(self):
         '''相当于返回一个变量值'''

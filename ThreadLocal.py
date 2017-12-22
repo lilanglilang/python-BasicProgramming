@@ -4,7 +4,7 @@ import threading
 local_stu=threading.local()
 def process_student():
     stu=local_stu.student
-    print("hello %s (in %s)"%(stu,threading.current_thread().name))
+    print("huanren %s (in %s)"%(stu,threading.current_thread().name))
 def process_thread(name):
     local_stu.student=name
     process_student()

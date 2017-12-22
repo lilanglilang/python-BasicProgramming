@@ -12,7 +12,7 @@ __author__，__name__就是特殊变量，hello模块定义的文档注释也可
 def _private_function():
     name="lilang"
     _city="jinan"
-    print("hello")
+    print("huanren")
 from PIL import Image as image
 im=image.open('E:\\timg.jpg')
 print(im.format, im.size, im.mode)

@@ -18,7 +18,7 @@ ZeroDivisionError: division by zero
 '''
 #logging
 import logging
-logging.basicConfig(level=logging.INFO,filename='hello.txt')
+logging.basicConfig(level=logging.INFO,filename='huanren.txt')
 s='0'
 n=int(s)
 logging.info("n=%d"%n)

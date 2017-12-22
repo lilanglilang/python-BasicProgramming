@@ -18,9 +18,9 @@
 如果是配置文件，调用readlines()最方便：
 '''
 import logging
-logging.basicConfig(filename='hello.txt')
+logging.basicConfig(filename='huanren.txt')
 try:
-    file = open("hello.txt", 'r',encoding='utf-8')
+    file = open("huanren.txt", 'r',encoding='utf-8')
     print(file)
     data = file.read()
     print(data)
@@ -28,9 +28,9 @@ except IOError:
     pass
 finally:
     file.close()
-with open("hello.txt", 'r',encoding='utf-8') as  f:
+with open("huanren.txt", 'r',encoding='utf-8') as  f:
     print(f.read())
-file = open("hello.txt", 'r',encoding='utf-8')
+file = open("huanren.txt", 'r',encoding='utf-8')
 for line in file.readlines():
     print(line+"你好")
 file.close()
@@ -50,7 +50,7 @@ f.close()
 遇到这种情况，open()函数还接收一个errors参数，
 表示如果遇到编码错误后如何处理。最简单的方式是直接忽略：
 '''
-file=open('hello.txt','r',encoding='utf-8',errors='ignore')
+file=open('huanren.txt','r',encoding='utf-8',errors='ignore')
 print(file.read())
 '''
 写文件和读文件是一样的，唯一区别是调用open()函数时，
@@ -62,10 +62,10 @@ print(file.read())
 忘记调用close()的后果是数据可能只写了一部分到磁盘，
 剩下的丢失了。所以，还是用with语句来得保险：
 
-with open('hello.txt','w') as f:
+with open('huanren.txt','w') as f:
     f.write("你是猪么")
     #������出现了乱码
-with open('hello.txt','w',encoding='utf-8') as f:
+with open('huanren.txt','w',encoding='utf-8') as f:
     f.write("你是猪么")
 '''
 fpath=r'E:\查询指定微博数据.txt'

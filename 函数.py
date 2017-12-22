@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 name=('lilang','lilanbg')
-name=['baidu','hello']
+name=['baidu','huanren']
 print(name)
 name[0]='google'
 print(name)

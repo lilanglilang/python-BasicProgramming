@@ -71,7 +71,7 @@ BaseException
 '''
 def function(a):
     if a==-1:
-        print("hello")
+        print("huanren")
     else:
         return "null"
 function(-1)
@@ -90,7 +90,7 @@ def myTryTwo():
      1/0
     except Exception as  e:
         print(e)
-    print("hello i still run")
+    print("huanren i still run")
 myTryTwo()
 #division by zero
 #hello i still run
@@ -100,7 +100,7 @@ def myTryThree():
      print("i will not run")
     except Exception as  e:
         print(e)
-    print("hello i still run")
+    print("huanren i still run")
 myTryThree()
 #division by zero
 #hello i still run
@@ -112,12 +112,12 @@ def myTryFour():
         print(e)
     finally:
         print("i will run anyway!")
-    print("hello i still run")
+    print("huanren i still run")
 myTryFour()
 '''
 division by zero
 i will run anyway!
-hello i still run
+huanren i still run
 '''
 def myTryFour():
     try:
@@ -131,13 +131,13 @@ def myTryFour():
         print("哇，竟然没错")
     finally:
         print("i will run anyway!")
-    print("hello i still run")
+    print("huanren i still run")
 myTryFour()
 '''
 there is not exception，i will run
 哇，竟然没错
 i will run anyway!
-hello i still run
+huanren i still run
 '''
 #错误的记录
 # 如果不捕获错误，自然可以让Python解释器来打印出错误堆栈，但程序也被结束了

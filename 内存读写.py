@@ -7,12 +7,12 @@ StringIO顾名思义就是在内存中读写str。
 '''
 from io import StringIO
 f=StringIO()
-flag=f.write("hello")
+flag=f.write("huanren")
 flag=f.write("helloli")
 flag=f.write("hellowo")
 print(flag)#5
 print(f.getvalue())
-f=StringIO("hello\nHi\npython\n")
+f=StringIO("huanren\nHi\npython\n")
 while True:
     s=f.readline()
     if s=='':
