@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+class delTest():
+    def __del__(self):
+        print("你好")
+# delone=delTest()
+# print("hello")
+'''
+hello
+你好
+'''
+class delTwo():
+    def __del__(self):
+        print("对象消除")
+delT=delTwo()
+'''
+del delT
+print("删除了")
+删除了
+你好
+'''
+delth=delTwo()
+del delTwo
+print("hello")
+'''
+hello
+对象消除
+对象消除
+'''
