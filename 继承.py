@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*
 class A(object):
+    num=0
     def __init__(self):
         self.name='helo'
         self.__age='23'
@@ -13,6 +14,7 @@ class B(A):
 b=B()
 print(b.name)
 print(b._sex)
+print(b.num)
 # print(b.__age) 私有属性不允许使用
 '''
 helo
