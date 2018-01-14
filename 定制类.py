@@ -35,3 +35,5 @@ varn.python
 callname=MyOwnClass()
 print(callname())
 print(callable(callname))#判断对象能否被调用
+
+
