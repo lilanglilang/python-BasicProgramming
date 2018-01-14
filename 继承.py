@@ -4,7 +4,6 @@ class A(object):
     num=0
     def __init__(self):
         #实例属性
-
         self.name='helo'
         self.__age='23'
         self._sex='男'
