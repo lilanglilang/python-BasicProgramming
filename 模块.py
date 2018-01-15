@@ -18,3 +18,4 @@ im=image.open('E:\\timg.jpg')
 print(im.format, im.size, im.mode)
 im.thumbnail((200, 100))
 im.save('E:\\thumb', 'PNG')
+#模块的导入的时候不要用*，后面的同名的模块会替代前面的模块
